@@ -40,7 +40,7 @@ html {
     html {
         font-size: 50%;
     }
-
+    
 }
 
 body {
@@ -78,6 +78,15 @@ body {
 @media only screen and (max-width: 400px) {
     .content-area{
         flex-direction:column;
+    }
+    #location{
+        width:100%;
+        float:right;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .content-area .side-navigation{
+        flex-direction:row;
     }
 }
 #images{
@@ -130,11 +139,7 @@ body {
     margin-top: 35px;
     background-color: #000;
 }
-  {
-    display:inline-block;
-    width:50px;
-    height:50px;
-  }
+
   .header2{
       display:inline;
       background-color: aliceblue;
@@ -194,7 +199,7 @@ body {
     max-width: 200px;
     padding:45px 35px 45px 35px;
     font-size:11px;
-    margin:15px 15px 15px 25px;
+    margin:15px 15px 15px 45px;
 }
 #content{
     display:flex;
@@ -268,4 +273,27 @@ div#content {
     padding:10px 20px 10px 20px;
     height:20px;
     width:10px;
+}
+#contentsubpart {
+    position:absolute;
+    z-index:auto;
+  }
+.user1{
+    position:absolute;
+    z-index:1;
+}
+.user2{
+    position: relative;
+    z-index:2;
+    margin-left:25px;
+}
+.user3{
+    position: absolute;
+    z-index:3;
+    margin-left:20px;
+}
+.user4{
+    position: relative;
+    z-index:4;
+    margin-left:0px;
 }
